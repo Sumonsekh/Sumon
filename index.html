@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SumonSecureView</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📤 Share One-Time Content</h1>
+    <label>Content Type:</label>
+    <select id="type">
+      <option value="text">Text</option>
+      <option value="image">Image URL</option>
+      <option value="video">Video URL</option>
+      <option value="audio">Audio URL</option>
+    </select>
+
+    <label>Content:</label>
+    <textarea id="content" rows="5" placeholder="Enter your message or media link"></textarea>
+
+    <button onclick="uploadContent()">Generate Link</button>
+
+    <div id="linkSection" class="hidden">
+      <p>🔗 One-Time Link:</p>
+      <a id="generatedLink" href="#" target="_blank"></a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
